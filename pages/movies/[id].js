@@ -8,8 +8,9 @@ const Movie = (props) => {
     return (
         <div>
             <div className="jumbotron">
+                <a ><img className="card h-100" src={movie.image} alt="" /></a>
                 <h1 className="display-4">{movie.name}</h1>
-                <p className="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                <p className="lead">{movie.description}</p>
                 <hr className="my-4" />
                 <p>It uses utility classNamees for typography and spacing to space content out within the larger container.</p>
                 <p className="lead">
@@ -23,8 +24,9 @@ const Movie = (props) => {
     )
 }
 
-Movie.getInitialProps = async () => {
-    const movie = await getMoviesById("2")
+Movie.getInitialProps = async (context) => {
+    const id = context.query.id
+    const movie = await getMoviesById(id)
     return { movie }
 }
 
