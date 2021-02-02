@@ -1,7 +1,6 @@
 const Carousel = (props) => {
 
     const { images } = props
-    console.log(images, "====");
     return (
         <div id="carouselExampleIndicators" className="carousel slide my-4" data-ride="carousel">
             <ol className="carousel-indicators">

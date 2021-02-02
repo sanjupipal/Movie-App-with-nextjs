@@ -4,13 +4,12 @@ import Carousel from '../components/carousel'
 import MovieList from '../components/movieList'
 import Footer from '../components/footer'
 import { useState, useEffect } from 'react'
-import { getMovies } from '../actions/index'
+import { getCategory, getMovies } from '../actions/index'
 import React from 'react'
 
 const Home = (props) => {
 
-  const { images } = props
-
+  const { images, categories } = props
   return (
     <div>
       <div >
@@ -18,9 +17,7 @@ const Home = (props) => {
           <div className="row">
 
             <div className="col-lg-3">
-
-              <h1 className="my-4">Shop Name</h1>
-              <SideMenu />
+              <SideMenu categories={categories} />
 
             </div>
 
@@ -39,6 +36,8 @@ const Home = (props) => {
 
 Home.getInitialProps = async () => {
   const movies = await getMovies()
+  const categories = await getCategory()
+  console.log(categories, "ddd");
   const images = movies.map((movie) => {
     return {
       id: `movie-${movie.id}`,
@@ -48,7 +47,8 @@ Home.getInitialProps = async () => {
   })
   return {
     movies,
-    images
+    images,
+    categories
   }
 }
 
