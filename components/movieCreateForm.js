@@ -1,14 +1,19 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 const MovieCreateForm = (props) => {
-    const [form, setForm] = useState({
+    const [isInitialDataLoaded, setInitialData] = useState(false)
+
+    const defaultData = {
         name: '',
         description: '',
         rating: '',
         image: '',
         cover: '',
         longDesc: ''
-    })
+    }
+    const formData = props.initialData ? { ...props.initialData } : defaultData
+
+    const [form, setForm] = useState(formData)
 
     const handleChange = (e) => {
         const target = e.target
@@ -43,24 +48,24 @@ const MovieCreateForm = (props) => {
         <form>
             <div className="form-group">
                 <label htmlFor="name">Name</label>
-                <input onChange={handleChange} name="name" value={form.name} type="text" className="form-control" id="name" aria-describedby="emailHelp" placeholder="Lord of the Rings" />
+                <input required onChange={handleChange} name="name" value={form.name} type="text" className="form-control" id="name" aria-describedby="emailHelp" placeholder="Lord of the Rings" />
             </div>
             <div className="form-group">
                 <label htmlFor="description">Description</label>
-                <input onChange={handleChange} name="description" value={form.description} type="text" className="form-control" id="description" placeholder="Somewhere in Middle-earth..." />
+                <input required onChange={handleChange} name="description" value={form.description} type="text" className="form-control" id="description" placeholder="Somewhere in Middle-earth..." />
             </div>
             <div className="form-group">
                 <label htmlFor="description">Rating</label>
-                <input onChange={handleChange} name="rating" value={form.rating} type="number" max="5" min="0" className="form-control" id="rating" placeholder="3" />
+                <input required onChange={handleChange} name="rating" value={form.rating} type="number" max="5" min="0" className="form-control" id="rating" placeholder="3" />
                 <small id="emailHelp" className="form-text text-muted">Max: 5, Min: 0 </small>
             </div>
             <div className="form-group">
                 <label htmlFor="image">Image</label>
-                <input onChange={handleChange} name="image" value={form.image} type="text" className="form-control" id="image" placeholder="http://....." />
+                <input required onChange={handleChange} name="image" value={form.image} type="text" className="form-control" id="image" placeholder="http://....." />
             </div>
             <div className="form-group">
                 <label htmlFor="cover">Cover</label>
-                <input onChange={handleChange} name="cover" value={form.cover} type="text" className="form-control" id="cover" placeholder="http://......" />
+                <input required onChange={handleChange} name="cover" value={form.cover} type="text" className="form-control" id="cover" placeholder="http://......" />
             </div>
             <div className="form-group">
                 <label htmlFor="longDesc">Long Description</label>
@@ -76,7 +81,7 @@ const MovieCreateForm = (props) => {
                     <option>action</option>
                 </select>
             </div>
-            <button type="button" onClick={submitForm} className="btn btn-primary">Create</button>
+            <button type="button" onClick={submitForm} className="btn btn-primary">Submit</button>
         </form>
     )
 }

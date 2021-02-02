@@ -6,7 +6,7 @@
     "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
     "longDesc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque non nobis, impedit veritatis quia, consectetur velit ea error ducimus totam ipsam, nisi dolorem voluptatum ut perspiciatis ex quidem nesciunt assumenda.",
     "rating": 4.8,
-    "genre": "drama",
+    "genre": "drama,adventure",
     "cover": "https://images.unsplash.com/photo-1507924538820-ede94a04019d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",
     "image": "https://m.media-amazon.com/images/M/MV5BNjQ2NDA3MDcxMF5BMl5BanBnXkFtZTgwMjE5NTU0NzE@._V1_CR0,60,640,360_AL_UX477_CR0,0,477,268_AL_.jpg"
   },
@@ -22,14 +22,13 @@
     "image": "https://img.cinemablend.com/filter:scale/quill/c/3/8/0/f/4/c380f4f12cfeec19f0c40c6f57db188f2f98cca8.jpg?mw=600"
   },
   {
-    "id": "3",
-    "name": "Lord of the Rings",
-    "releaseYear": 2004,
-    "description": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
-    "longDesc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, beatae aliquid excepturi! Distinctio temporibus modi eos in facere eum, eligendi incidunt? Eligendi, ea, explicabo. Repellat laboriosam suscipit natus totam dolores?",
-    "rating": 4.9,
-    "genre": "adventure, drama, fantasy",
-    "cover": "https://images.unsplash.com/photo-1462759353907-b2ea5ebd72e7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2389&q=80",
-    "image": "https://img.cinemablend.com/filter:scale/quill/0/f/5/2/a/6/0f52a6843a25c1a5c1f9a0c00548cad9e1d912e2.jpg?mw=600"
+    "name": "Chachi 420 ",
+    "description": "Chachi 420 (transl. The trickster aunt) is a 1997 Indian Hindi comedy film, co-written, produced and directed by Kamal Haasan. The film is a remake of the Tamil film Avvai Shanmughi (1996) which was inspired from the Hollywood film Mrs. Doubtfire (1993).[1] It was the first film directed by Kamal Haasan who also starred in the film playing double roles. The film also starred Tabu, Amrish Puri, Om Puri, Johnny Walker, Paresh Rawal, Rajendranath Zutshi, Ayesha Jhulka, Nassar and Fatima Sana Shaikh.",
+    "rating": "4",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyiHvbx-kWAKITNCBLjHDdyVuMKn1T1MRsCQ&usqp=CAU",
+    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFvEwttjH4cPDfLqDUFPH0f5l4pg1vqXJM3Q&usqp=CAU",
+    "longDesc": "Jaiprakash Paswan (Kamal Haasan) and Janki Paswan (Tabu) are fighting a divorce case. Janaki is the only daughter of Durgaprasad Bhardwaj (Amrish Puri), a staunch Hindu Brahmin businessman. Jaiprakash, a Hindu Dusadh, is an assistant dance director in films. The duo fell in love and married against the will of Durgaprasad. However, Janki buckles under the pressure of middle-class life. Other differences crop up between the couple and Janki walks out. The court grants the divorce. Jai is allowed to meet his beloved daughter Bharti (Fatima Sana Shaikh) once a week. But when he sneaks into the Bhardwaj house to steal Bharti, he loses visitation rights.\n\nMeanwhile, Durgaprasad puts ads in local newspapers for a nanny for Bharti. Jai sees this as an opportunity and calls Durgaprasad. Impersonating a female, he introduces himself as 'Shrimati Lakshmi Godbole' and applies for the position. With the help of a drunkard makeup artist Joseph (Johnny Walker in his last and memorable role), Jai undergoes a complete transformation into Lakshmi Godbole, a dignified elderly Marathi woman. He goes to the interview, where he is generally viewed as the last pick. But Bharti has an accident, and Lakshmi acts promptly to give first aid. Lakshmi gets the job and the respect of the Bhardwaj family.\n\nJai begins the job but creates plausible stories so that his real work schedule does not clash with the job in Bhardwaj's home. Apart from Joseph, only Bharti (who sees through her father's disguise) knows the real identity of Lakshmi. Jai learns that Durgaprasad's secretary Banwarilal Pandit (Om Puri) is not exactly thrilled at Lakshmi's entry. The reasons are various, such as Banwa's womanizing nature (which naturally views an old woman like Lakshmi with dislike) and his desire to siphon off Durgaprasad's money via friendly maids.\n\nMeanwhile, Durgaprasad decides to get Janki remarried to Dr Rohit (Rajendranath Zutshi), her childhood friend. One day, when Janki and Rohit get attacked by goons in the market, the doctor scampers. Lakshmi saves Janki's life and modesty. Later, Durgaprasad tells Lakshmi that he has changed his mind about the marriage on learning of Rohit's cowardice. Lakshmi also exposes the thefts committed by the maid in the Bhardwaj house. The maid is fired. Banwa has no other option but to let a male cook be appointed instead. Jai runs into his old friend Shiraz (Nassar), a Muslim restaurant chef who is now doing menial jobs as he lost his job trying to help Jai. Lakshmi introduces Shiraz to the Bhardwaj household as Pandit Shivraj Sharma, a mute Brahmin cook. Even Shiraz does not know that Lakshmi and Jai are the same people.",
+    "id": "77btv",
+    "genre": "drama,adventure"
   }
 ]

@@ -57,6 +57,22 @@ app.prepare().then(() => {
         })
     })
 
+    server.put('/api/v1/movies/:id', (req, res) => {
+        const { id } = req.params
+        const movie = req.body
+        const movieIndex = moviesData.findIndex((m) => {
+            return m.id === id
+        })
+        moviesData[movieIndex] = movie
+        const pathToFile = path.join(__dirname, filePath)
+        const stringData = JSON.stringify(moviesData, null, 2)
+        fs.writeFile(pathToFile, stringData, (err) => {
+            if (err) {
+                return res.status(422).send(err)
+            }
+            return res.json(movie)
+        })
+    })
     // we are handling all of the request comming to our server
     server.get('*', (req, res) => {
         // next.js is handling requests and providing pages where we are navigating to
