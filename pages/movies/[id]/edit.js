@@ -1,27 +1,38 @@
+
+
 import React from 'react'
-import { getMoviesById, UpdateMovie } from '../../../actions'
-import MovieCreateForm from '../../../components/movieCreateForm'
 import Router from 'next/router'
+import MovieCreateForm from '../../../components/movieCreateForm'
+import { getMovieById, updateMovie } from '../../../actions'
+
+
 class EditMovie extends React.Component {
 
-    static async getInitialProps({ query }) {
-        const movie = await getMoviesById(query.id)
-        return { movie }
-    }
-    handleUpdateMovie = (movie) => {
-        UpdateMovie(movie).then((movies) => {
-            Router.push(`/movies/${movie.id}`)
-        })
-    }
-    render() {
-        const { movie } = this.props
-        return (
-            <div className="container">
-                <h1>Edit movie</h1>
-                <MovieCreateForm handleFormSubmit={this.handleUpdateMovie} initialData={movie} />
-            </div>
-        )
-    }
+  static async getInitialProps({query}) {
+    const movie = await getMovieById(query.id)
+
+    return { movie }
+  }
+
+  handleUpdateMovie = (movie) => {
+    updateMovie(movie).then((updatedMovie) => {
+      Router.push('/movies/[id]', `/movies/${movie.id}`)
+    })
+  }
+
+  render() {
+    const { movie } = this.props
+    return (
+      <div className="container">
+        <h1>Edit the Movie</h1>
+        <MovieCreateForm
+          submitButton="Update"
+          initialData={movie}
+          handleFormSubmit={this.handleUpdateMovie} />
+      </div>
+    )
+  }
 }
+
 
 export default EditMovie
