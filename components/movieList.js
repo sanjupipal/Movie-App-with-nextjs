@@ -27,6 +27,7 @@ class MovieList extends React.Component {
                                 <a >{movie.name}</a>
                             </Link>
                         </h4>
+                        <div className="text-info">{movie.genre}</div>
                         <h5>$24.99</h5>
                         <p className="card-text">{this.shorter(movie.description, 200)}</p>
                     </div>

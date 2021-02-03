@@ -3,10 +3,11 @@ import axios from 'axios'
 const MOVIE_DATA = []
 const BASE_URL = 'http://localhost:3000/'
 const CATEGORY_DATA = [
-    { id: 1, name: 'drama' },
-    { id: 2, name: 'action' },
-    { id: 3, name: 'adventure' },
-    { id: 4, name: 'historical' },
+    { id: 0, name: 'All' },
+    { id: 1, name: 'Drama' },
+    { id: 2, name: 'Action' },
+    { id: 3, name: 'Adventure' },
+    { id: 4, name: 'Historical' },
 ]
 
 export const getCategory = () => {
